@@ -18,6 +18,8 @@
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/gallery.css" rel="stylesheet" />
     <link href="css/timeline.css" rel="stylesheet" />
+    <link href="css/carousel.css" rel="stylesheet" />
+
 </head>
 
 <body id="page-top">
@@ -37,7 +39,6 @@
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About Me</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
-                <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#certificate">Certificate</a></li>-->
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact Me</a></li>
 
                 <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>-->
@@ -85,14 +86,14 @@
                     currently in semester 6, my passion is in the field of Computer Networking and Web Programming. For
                     more details see my CV below.</p>
                 <div class="">
-                    <a download class="btn btn-primary text-white btn-lg "
-                        href="/assets/pdf/AriaFajarRamdhany_CV_EnglishVersion.pdf">Download
+                    <a download class="btn btn-primary text-white btn-lg" target="_blank"
+                        href="/assets/pdf/Aria_CV_English Version.pdf">Download
                         CV <i class="fas fa-download"></i></a>
                 </div>
             </div>
         </section>
-        
-        
+
+
         <ul class="timeline" style="margin-top: 10px;">
             <div class="subheading mb-5 text-center" style="margin-top: -100px;">
                 Education
@@ -107,7 +108,7 @@
                     <div class="desc">Bachelor of Information System</div>
                 </div>
             </li>
-          
+
             <!-- Item 2 -->
             <li>
                 <div class="direction-l">
@@ -118,9 +119,9 @@
                     <div class="desc">Computer and Network Engineering</div>
                 </div>
             </li>
-          
+
         </ul>
-        
+
         <hr class="m-0 mt-5" />
         <!-- Skills-->
         <section class="resume-section" id="skills">
@@ -179,162 +180,91 @@
             </div>
         </section>
         <hr class="m-0" />
-        <!-- Education-->
-        
+
+        <!-- Portfolio -->
+        <section class="resume-section" id="portfolio">
+            <div class="resume-section-content  ">
+                <h2 class="text-center">Portfolio</h2>
+
+                <div class="subheading mb-5 text-center ">
+                    My Project
+                </div>
+                <!--Carousel Youcounsel-->
+                <div class="row">
+                    <div id="carousel1" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-sm-5 d-flex align-items-center">
+                                        <img src="/assets/img/logo/klinikku.png" class="d-block w-100" alt="..."
+                                            style="margin-left:auto; margin-right:auto;width: 200px;">
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <h4 class="title ">Klinik <span class="text-primary">Ku</span></h4>
+                                        <p>Digital clinic website platform that is ready to serve and help health
+                                            problems.
+                                        </p>
+                                        <div>
+                                            <div>
+                                                <a download class="btn btn-primary text-white btn-sm " target="_blank"
+                                                    href="https://codeload.github.com/ariafajarr14/TUBES_WAD/zip/refs/heads/main">Source
+                                                    Code <i class="fas fa-download"></i></a>
+
+                                                <a download class="btn btn-secondary text-white btn-sm " target="_blank"
+                                                    href="https://github.com/ariafajarr14/TUBES_WAD.git"> Github <i
+                                                        class="fab fa-github"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-5 d-flex align-items-center">
+                                        <img src="/assets/img/logo/youcounsel.png" class="d-block w-100" alt="..."
+                                            style="margin-left:auto; margin-right:auto;width: 200px;">
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <h4 class="title ">You <span class="text-primary">counsel</span></h4>
+                                        <p>Website platform to conduct counseling with expert counselors.
+                                        </p>
+                                        <div>
+                                            <div>
+                                                <a download class="btn btn-primary text-white btn-sm " target="_blank"
+                                                    href="https://codeload.github.com/SI-RPL-2021/SI4201-You_Counsel/zip/refs/heads/master">Source
+                                                    Code <i class="fas fa-download"></i></a>
+
+                                                <a download class="btn btn-secondary text-white btn-sm " target="_blank"
+                                                    href="https://github.com/SI-RPL-2021/SI4201-You_Counsel.git"> Github
+                                                    <i class="fab fa-github"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel1"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel1"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
         <hr class="m-0" />
-        <!-- Experience
-        <section class="resume-section" id="experience">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Organizational Experience</h2>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">ORBIT</h3>
-                        <div class="subheading mb-3">Organization Basic of Information Technplogy</div>
-                        <p>extracurricular organization in SMKN 4
-                            Bandung to increase the potential of students
-                            engaged in IT</p>
-                        <ul class="fa-ul mb-0">
-                            <li>
-                                <span class="fa-li"><i class="fas fa-check"></i></span>
-                                Member of Networking Division
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">2016 - 2017</span></div>
-                </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">CCI</h3>
-                        <div class="subheading mb-3">Central Computer Improvement</div>
-                        <p>Student Activity Unit (UKM) at Telkom University
-                            which focuses on the field of ICT (Information,
-                            Communication and Technology).</p>
-                        <ul class="fa-ul mb-0">
-                            <li>
-                                <span class="fa-li"><i class="fas fa-check"></i></span>
-                                Member of Web Development Division
-                            </li>
-                            <li>
-                                <span class="fa-li"><i class="fas fa-check"></i></span>
-                                Committee Coordinator at the 2020 Summit Event
-                            </li>
-                        </ul>
-                        <div class="gallery cf">
-                            <div>
-                                <img src="assets/img/Konsumsi TechWeek.png" />
-                            </div>
-                            <div>
-                                <img src="assets/img/Acara UIX Design.png" />
-                            </div>
-                            <div>
-                                <img src="assets/img/Pubdok NetConf.png" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">2018 - 2020</span></div>
-                </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">KEPROFESIAN EIM</h3>
-                        <div class="subheading mb-3">Enterprise Infrastructure Management</div>
-                        <p>Organization of specialization at the Faculty of
-                            Industrial Engineering at Telkom University in the
-                            Information Systems Study Program which focuses
-                            on corporate infrastructure management.
-                        </p>
 
-                        <ul class="fa-ul mb-0">
-                            <li>
-                                <span class="fa-li"><i class="fas fa-check"></i></span>
-                                Staff of Project Division
-                            </li>
-                            <li>
-                                <span class="fa-li"><i class="fas fa-check"></i></span>
-                                Staff of Operational Division
-                            </li>
-                            <li>
-                                <span class="fa-li"><i class="fas fa-check"></i></span>
-                                Disciplinary Commission
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">2019 - Present</span></div>
-                </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">SISJAR Lab Practicum Assistant</h3>
-                        <div class="subheading mb-3">Operating System And Computer Network</div>
-                        <p>The SISJAR laboratory is under the auspices of FRI (Faculty of Industrial Engineering),
-                            especially the Information Systems Study Program which focuses on operating systems and
-                            computer networks.</p>
-                        <ul class="fa-ul mb-0">
-                            <li>
-                                <span class="fa-li"><i class="fas fa-check"></i></span>
-                                Disciplinary Commission
-                            </li>
-                            <li>
-                                <span class="fa-li"><i class="fas fa-check"></i></span>
-                                Practicum Assistant of Computer Network Management
-                            </li>
-                            <li>
-                                <span class="fa-li"><i class="fas fa-check"></i></span>
-                                Practicum Assistant of Network Computer Design and Data Communication
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">2020 - 2021</span></div>
-                </div>
-            </div>
-        </section>
-        <hr class="m-0" />-->
-
-
-
-        <!-- Interests
-        <section class="resume-section" id="interests">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Interests</h2>
-                <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid
-                    skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking,
-                    free climbing, and kayaking.</p>
-                <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television
-                    shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest
-                    technology advancements in the front-end web development world.</p>
-            </div>
-        </section>
-        <hr class="m-0" /> -->
-        <!-- certificate
-        <section class="resume-section" id="certificate">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Certificate of Expertise</h2>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Certificate of Competence Intitech</h3>
-                        <div class="subheading mb-3">Competency of Computer & Network Engineering Skills</div>
-                        <div class="gallery cf">
-                            <div>
-                                <img src="assets/img/intitech1.jpg" />
-                            </div>
-                            <div>
-                                <img src="assets/img/intitech2.jpg" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Certificate of Accomplishment SAP</h3>
-                        <div class="subheading mb-3">SAP01 - SAP Overview</div>
-                        <div class="gallery cf">
-                            <div>
-                                <img src="assets/img/SAP.jpg" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <hr class="m-0" />-->
         <!-- Contact Me-->
         <section class="resume-section text-center" id="contact">
             <div class="resume-section-content">
@@ -391,6 +321,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    <script src="js/carousel.js"></script>
+
 </body>
 <script>
 
