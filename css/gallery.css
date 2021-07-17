@@ -1,41 +1,51 @@
 .gallery {
-    width: 215px;
-    margin: 0 auto;
-    float: center;
-    padding: 5px;
-    background: #fff;
-    box-shadow: 0 1px 2px rgba(0,0,0,.3);
-    box-sizing: border-box;
+  width: 215px;
+  margin: 0 auto;
+  float: center;
+  padding: 5px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+  box-sizing: border-box;
+}
+
+.gallery>div {
+  position: relative;
+  float: center;
+  padding: 5px;
+}
+
+.gallery>div>img {
+  display: block;
+  width: 200px;
+  transition: .1s transform;
+  transform: translateZ(0);
+  /* hack */
+}
+
+.gallery>div:hover {
+  z-index: 1;
+}
+
+.gallery>div:hover>img {
+  transform: scale(4, 4);
+  transition: .9s transform;
+}
+
+.cf:before,
+.cf:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.cf:after {
+  clear: both;
+}
+
+@media only screen and (max-width: 768px) {
+  .gallery>div:hover>img {
+    transform: scale(2, 2);
+    transition: .9s transform;
   }
-  
-  .gallery > div {
-    position: relative;
-    float: center;
-    padding: 5px;
-  }
-  
-  .gallery > div > img {
-    display: block;
-    width: 200px;
-    transition: .1s transform;
-    transform: translateZ(0); /* hack */
-  }
-  
-  .gallery > div:hover {
-    z-index: 1;
-  }
-  
-  .gallery > div:hover > img {
-    transform: scale(3,3);
-    transition: .3s transform;
-  }
-  
-  .cf:before, .cf:after {
-    display: table;
-    content: "";
-    line-height: 0;
-  }
-  
-  .cf:after {
-    clear: both;
-  }
+
+}
